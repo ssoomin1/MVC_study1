@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <!-- 아까는 GET 방식이고 지금은 POST방식이라 달라도 상관없다.  -->
 	<form method="post" action="/test4">
 		아이디 : <input type="text" name="uid">

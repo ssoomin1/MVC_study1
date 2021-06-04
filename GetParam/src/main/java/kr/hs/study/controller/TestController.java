@@ -4,6 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.context.request.WebRequest;
 
 @Controller
@@ -55,7 +57,27 @@ public class TestController {
 	}
 	
 	@GetMapping("/test4")
-	public String test4(WebRequest request) {
-		return "test_form.jsp";
+	public String test4() {
+		return "test_form";
+	}
+	
+	@PostMapping("/test4")
+	public String test4_2(WebRequest request) {
+		String id=request.getParameter("uid");
+		String pw=request.getParameter("upw");
+		System.out.println("사용자 아이디: "+id);
+		System.out.println("사용자 비밀번호 : "+pw);
+		return "result";
+	}
+	
+	//어디에 담을 것인지 변수는 중괄호로 해주기
+	@GetMapping("/test5/{a}/{b}/{c}")
+	public String test5(@PathVariable int a,
+						@PathVariable int b,
+						@PathVariable int c) {
+		System.out.println("a: "+a);
+		System.out.println("b: "+b);
+		System.out.println("c: "+c);
+		return "result";
 	}
 }
