@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Hello Spring MVC~</h1> <br/>
-	<img src="img/spring_logo.">
+	<img src="img/spring_logo.png">
 	<jsp:include page="includes/menu.jsp"/>	
 </body>
 </html>
