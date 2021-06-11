@@ -6,7 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
+
+import kr.hs.study.model.dto.ModelDTO;
 
 @Controller
 public class TestController {
@@ -80,4 +83,44 @@ public class TestController {
 		System.out.println("c: "+c);
 		return "result";
 	}
+	
+	@GetMapping("/test6")
+	public String test6(@RequestParam (value="a") int aa, @RequestParam int b, @RequestParam int c[]) {
+		//RequestParam은 형변환이 가능하다. 위에 있는 것들은 String타입으로 받았는데 지금 int로 받았다. 
+		//변수명을 똑같이 주는게좋은데 다르게 주고 싶다면
+		//value는 왜 주냐? 위의 이유로
+		System.out.println("a: "+aa);
+		System.out.println("b: "+b);
+		for(int num:c){
+			System.out.println(num);
+		}
+		
+		return "result";
+	}
+//	
+	
+//	@GetMapping("/test7")
+//	public String test7(@RequestParam MAp(String,STring),expm) {
+//		
+	
+//	}
+	
+//	@Getmapping("/test8")
+//	public String test8(@RequestParam = Map<Sttrin,String>) {
+//		String a=map.get("a)'";-;
+//		String b=map.get("b");
+//		for(String val:c
+//	}
+	
+	@GetMapping("/test9")
+	//public String test9(@ModelAttribute ModelDTO dto) {
+	public String test9(ModelDTO dto) {
+		//a,b,c값 출력시키기
+		System.out.println(dto.getA());
+		System.out.println(dto.getB());
+		System.out.println(dto.getC());
+		return "result";
+	}
+	
+	
 }
