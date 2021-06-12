@@ -49,6 +49,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ViewResolver"/>
+			<item value="CommandObject"/>
 			<item value="GetParameter2"/>
 			<item value="URLMapping"/>
 			<item value="MappingURL"/>

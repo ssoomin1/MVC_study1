@@ -35,7 +35,9 @@ public class TestController {
 	
 	@GetMapping("/test3")
 	public String test3(@ModelAttribute ModelDTO2 dto2) {
+		
 		System.out.println("data1: "+dto2.getData1());
+		
 		System.out.println("data2: "+dto2.getData2());
 		return "result";
 	}

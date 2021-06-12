@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="kr.hs.study.model.dto.ModelDTO"/>
+    <fullyQualifiedTypeName name="kr.hs.study.dto.ModelDTO"/>
 </qualifiedTypeNameHistroy>
