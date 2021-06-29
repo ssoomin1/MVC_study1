@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SpringMVC\ViewResolver"/>
 			<item value="C:\SpringMVC\MVCPrj"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -49,8 +50,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="ViewResolver"/>
+			<item value="FormCustom"/>
 			<item value="CommandObject"/>
+			<item value="ViewResolver"/>
 			<item value="GetParameter2"/>
 			<item value="URLMapping"/>
 			<item value="MappingURL"/>

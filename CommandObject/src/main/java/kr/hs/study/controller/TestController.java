@@ -28,8 +28,9 @@ public class TestController {
 	@PostMapping("/test2")
 	public String test2_2(@ModelAttribute ModelDTO dto) {
 		//자동으로 ModelDTO 를 객체가 만들어진다(ModelDTO dto = new ModelDTO())
-		System.out.println("data1: "+dto.getData1());
-		System.out.println("data2: "+dto.getData2());
+//		System.out.println("data1: "+dto.getData1());
+//		System.out.println("data2: "+dto.getData2());
+		
 		return "result";
 	}
 	

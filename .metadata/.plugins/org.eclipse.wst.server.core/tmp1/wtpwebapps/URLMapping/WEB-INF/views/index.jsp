@@ -9,5 +9,6 @@
 <body>
 	<h1>Hello Spring MVC~</h1> <br/>
 	<img src="img/spring_logo.png" width="500" height="150"/>
+	<a href="/test1">test1</a>
 </body>
 </html>

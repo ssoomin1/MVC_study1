@@ -9,4 +9,7 @@
     <fullyQualifiedTypeName name="kr.hs.study.model.dto.ModelDTO"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="kr.hs.study.dto.ModelDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="kr.hs.study.dto.DataDTO"/>
+    <fullyQualifiedTypeName name="kr.hs.study.model.dto.LoginDTO"/>
 </qualifiedTypeNameHistroy>
